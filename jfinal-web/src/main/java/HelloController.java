@@ -8,4 +8,7 @@ public class HelloController extends Controller {
     public void index(){
         renderText("hello JFinal!");
     }
+    public void test(){
+        renderText("Hello JFinal Test");
+    }
 }
