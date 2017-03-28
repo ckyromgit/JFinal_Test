@@ -26,17 +26,17 @@ public class DemoConfig extends JFinalConfig{
      * 一条启动配置，可对该自动生成的配置再添加额外的配置项，例如 VM argument 可配置为：
      * -XX:PermSize=64M -XX:MaxPermSize=256M
      */
-    public static void main(String[] args) {
-        /**
-         * 特别注意：Eclipse 之下建议的启动方式
-         */
-        // JFinal.start("src/main/webapp", 80, "/", 5);
-
-        /**
-         * 特别注意：IDEA 之下建议的启动方式，仅比 eclipse 之下少了最后一个参数
-         */
-        JFinal.start("src/main/webapp", 80, "/");
-    }
+//    public static void main(String[] args) {
+//        /**
+//         * 特别注意：Eclipse 之下建议的启动方式
+//         */
+//        // JFinal.start("src/main/webapp", 80, "/", 5);
+//
+//        /**
+//         * 特别注意：IDEA 之下建议的启动方式，仅比 eclipse 之下少了最后一个参数
+//         */
+//        JFinal.start("src/main/webapp", 80, "/");
+//    }
     public void configConstant(Constants me) {
         // 加载少量必要配置，随后可用PropKit.get(...)获取值
         PropKit.use("a_little_config.txt");
